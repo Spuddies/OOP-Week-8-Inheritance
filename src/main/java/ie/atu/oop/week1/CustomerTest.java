@@ -2,15 +2,9 @@ package ie.atu.oop.week1;
 
 public class CustomerTest {
     public static void main(String[] args) {
-        Customer first = new Customer("paul","Gort","2323232323",123,true);
-        System.out.println(first);
+        Ticket ticket = new Ticket("Summer Concert","Alice",50);
+        Ticket ticket2 = new StudentTicket("Summer Concert","Bob",50,"g00484675");
+        Ticket ticket3 = new VIPTicket("Summer Concert","Alice",50);
 
-        Customer second = new Customer();
-        second.setName("pat");
-        second.setAddress("Mervue");
-        second.setPhoneNumber("444444444444");
-        second.setCustomerNumber(23);
-        second.setMailingList(false);
-        System.out.println(second);
     }
 }
