@@ -46,7 +46,7 @@ public class Ticket {
         return "Ticket{" +
                 "eventName='" + eventName + '\'' +
                 ", holderName='" + holderName + '\'' +
-                ", basePrice=" + basePrice +
+                ", basePrice=" + calculatePrice() +
                 '}';
     }
     public double calculatePrice(){
