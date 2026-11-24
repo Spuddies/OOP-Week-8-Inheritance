@@ -1,0 +1,55 @@
+package ie.atu.oop.week1;
+
+public class Ticket {
+    private String eventName;
+    private String holderName;
+    private double basePrice;
+
+    public Ticket(String eventName, String holderName, double basePrice) {
+        this.eventName = eventName;
+        this.holderName = holderName;
+        this.basePrice = basePrice;
+    }
+
+    public Ticket() {
+        this.eventName = "";
+        this.holderName = "";
+        this.basePrice = 0;
+    }
+
+    public String getEventName() {
+        return eventName;
+    }
+
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
+    }
+
+    public String getHolderName() {
+        return holderName;
+    }
+
+    public void setHolderName(String holderName) {
+        this.holderName = holderName;
+    }
+
+    public double getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice(double basePrice) {
+        this.basePrice = basePrice;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "eventName='" + eventName + '\'' +
+                ", holderName='" + holderName + '\'' +
+                ", basePrice=" + calculatePrice() +
+                '}';
+    }
+    public double calculatePrice(){
+        return basePrice;
+    }
+}
